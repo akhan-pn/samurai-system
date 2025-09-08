@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar{
+  width: 6px;
+  background: #0B0A0A;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #C92127;
+  border-radius: 100px;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+
+.list-item {
+  list-style-type: none;
+  position: relative;
+}
+
+.list-item::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px; /* Adjust the width */
+  height: 15px; /* Adjust the height */
+  background-image: url('/check.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@font-face {
+  font-family: Neuropol;
+  src: url("./_fonts/Neuropol.otf");
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("./_fonts/ClashDisplay-Regular.otf");
+}
+
+
+@layer utilities {
+  .line{
+    @apply inline-block h-[3px] align-middle;
+  }
+}
