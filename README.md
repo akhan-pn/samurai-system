@@ -1,11 +1,3 @@
-# Samurai System — Modern web application
-
-[![preview](https://raw.githubusercontent.com/akhan-pn/3d-portfolio/main/public/images/samurai-system.webp)](https://samurai-system.vercel.app)
-
-**Live →** https://samurai-system.vercel.app
-
----
-
 # Samurai System
 
 A modern web application built with Next.js, React, and Tailwind CSS, featuring smooth animations powered by GSAP and responsive design.
